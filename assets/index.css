@@ -1,0 +1,116 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto:300,400,500,900");
+
+body {
+  font-family: "Roboto", "Helvetica", "sans-serif";
+  padding-bottom: 200px;
+  color: #4f4f4f;
+}
+h1, h2, h3 {
+  font-family: "Roboto", "sans-serif";
+  margin-top: 0;
+}
+h1 {
+  font-weight: bold;
+  color: #002a52
+}
+img {
+  border-radius: 4px;
+}
+p {
+  font-size: 17px
+}
+
+.header {
+  width: 100vw;
+  height: 60vh;
+  background: linear-gradient(-90deg,
+    rgba(0,0,0,0.3) 0%,
+    rgba(0,0,0,0.6) 70%
+  ), url("https://res.cloudinary.com/wagon/image/upload/c_fill,q_auto,w_1440/v1541765086/xnq7sxknj6mcu2skxxiq.webp");
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.header h1 {
+  font-weight: bold;
+  color: white !important;
+  font-size: 60px;
+  margin-top: 0
+}
+.header p {
+  letter-spacing: 0.5px;
+  color: white !important;
+  opacity: 0.9;
+  font-size: 17px;
+  margin-bottom: 0;
+}
+.header-text {
+  padding-left: 3vw;
+  margin-left: 8vw;
+  max-width: 45vw;
+  border-left: 1px solid white;
+}
+.description-section {
+  display: flex;
+  align-items: center;
+  min-height: 40vh;
+  background: rgba(224, 233, 240, 1)
+}
+.description-section img {
+  padding-left: 8vw;
+  width: 320px;
+}
+.text-section {
+  max-width: 60vw;
+  padding-left: 3vw
+}
+.info-section {
+  display: flex;
+  align-items: center;
+  min-height: 560px;
+}
+.images {
+  width: 450px;
+}
+.images img {
+  margin-bottom: 20px;
+}
+.img-couple {
+  display: flex;
+  justify-content: space-between;
+}
+.info-text {
+  padding-right: 100px;
+}
+.staff-section {
+  background: #002a52;
+  padding-right: 7vw;
+  padding-left: 7vw;
+  height: 520px;
+  padding-top: 40px
+}
+.staff-section h1 {
+  color: white;
+  text-align: center;
+}
+.staff-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  margin-left: 18px;
+  margin-right: 18px;
+  padding-top: 40px;
+  text-align: center;
+  color: white;
+}
+.card span {
+  opacity: 0.8;
+}
+.card img {
+  margin-bottom: 20px;
+  width: 140px;
+  border-radius: 50%;
+}
