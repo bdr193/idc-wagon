@@ -1,0 +1,21 @@
+<ngb-carousel *ngIf="slides" class="carousel-wrapper">
+    <ng-template ngbSlide *ngFor="let slide of slides">
+      <div class="row slide">
+        <div class="col-md-6 col-sm-10 offset-md-3">
+          <div class="slide-content">
+            <div class="slide-head">
+              <div class="slide-title">{{slide.title}}</div>
+              <p class="slide-date">{{slide.date}}</p>
+            </div>
+            <div class="slide-text">
+              {{slide.text}}                      
+              <ul>
+                <li *ngFor="let item of slide.list">{{item}}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-carousel>

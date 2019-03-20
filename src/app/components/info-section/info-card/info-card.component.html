@@ -1,0 +1,15 @@
+<div class="row">
+  <div *ngFor="let card of cards" class="col-md-4 col-sm-6"> 
+    <div class="card">
+      <div class="card-img-top d-flex align-items-center">
+          <div class="img-wrapper">
+              <img class="img-fluid" [src]="'/assets/images/'+ card.icon" alt="Card image cap">
+          </div>
+          <div class="text">
+            <h3>{{card.title | uppercase}}</h3>
+            <h2>{{card.value}}</h2>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>  

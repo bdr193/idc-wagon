@@ -1,0 +1,52 @@
+<div class="row img-wrapper section welcome-section fp-section fp-table">
+    <div class="col-12">
+      <div class="row">
+        <div class="col-md-5 col-sm-12 offset-md-1 offset-sm-2 title">
+          <div class="header-text col-12">
+            <h1>IDC - LE WAGON</h1>
+            <p class="description">
+              14-week entrepreneurship and coding bootcamp in the heart of Startup Nation.
+              Code and launch your startup this summer.
+            </p>
+            <h5>June 16 - September 19</h5>
+          </div>
+          <div class="col-12 btns-wrapper">
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                  <button type="button" class="btn btn-contact" (click)="open(contact)">Contact Rabea</button>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <button type="button" class="btn btn-apply" (click)="open(apply)">Apply to Tel Aviv</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-12 logos">
+          <div class="col-12">
+            <img src="assets/images/IDC_logo_white.png" alt="" class="idc-logo logo float-right">
+          </div>
+          <div class="col-12">
+            <img src="assets/images/white_logo.png" alt="" class="wagon-logo logo" align="right">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+<ng-template #contact let-modal>
+    <idc-contact-us></idc-contact-us>
+</ng-template>
+
+<ng-template #apply let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-apply">Apply now</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+      <iframe src="https://kitt.lewagon.com/camps/id:283/applications/new?btn_background=lightblue&btn_color=white" width="100%" height="100%" frameborder="0"></iframe>
+      <!-- background_color=%233bb4c1&btn_background=%23048998&btn_color=white -->
+  </div>
+</ng-template>
